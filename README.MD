@@ -81,7 +81,7 @@ This method is essentially fetching the templates from external files and loads 
 </div>
 ```
 
-In order to ensure the compatibility with the jQuery, the "<div>" element is brought into action. Now, since we have different templates represented differently, we will have separate ids for each and now let’s put them into action by using them in a page:
+In order to ensure the compatibility with the jQuery, the div element is brought into action. Now, since we have different templates represented differently, we will have separate ids for each and now let’s put them into action by using them in a page:
 
 ```
 <!doctype html>
@@ -114,7 +114,7 @@ $(document).ready(function(){
 
 ## More Methods
 
-##### There are a number of other methods as well that can be used and must be known to you:
+### There are a number of other methods as well that can be used and must be known to you:
 
 ich.addTemplate(name, mustacheTemplateString): This method is used to add a new template. While there are other methods for the same job, you can use it as an alternative to the <script type=”text/html”> way of execution. You also have the provision to lazy load.
 
