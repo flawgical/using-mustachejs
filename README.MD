@@ -32,6 +32,7 @@ alert(html);
 
 #### Let's look at another mustache example that shows how the if and else statements, and for loops are not needed at all:
 
+```
 <!doctype html>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,3 +55,4 @@ function loadtemp(){
     <div id="rank"></div>
 </body>
 </html>
+```
