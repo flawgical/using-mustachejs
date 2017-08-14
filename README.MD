@@ -5,7 +5,7 @@
 ## Why the need for Mustache?
 
 #### When shaping HTML elements by making use of Javascript or jQuery can make the code look quite messy and way too complicated.
-
+```
 // JavaScript
 newDiv = document.createElement('div');
 newDiv.setAttribute('class', 'new');
@@ -14,9 +14,10 @@ newDiv.appendChild(order_list);
 list_value = document.createElement('li');
 list_value.innerHTML = 'Order list value';
 order_list.appendChild(list_value);
+```
 
 #### With mustache.js we can get a solution that is far more feasible to understand and implement.
-
+```
 var view = {
     name: "Roy",
     say: function(){
@@ -26,6 +27,7 @@ var view = {
 var template = "{{name}} says {{say}}";
 var html = Mustache.to_html(template, view);
 alert(html);
+```
 
 ```So as we can see the code is simpler and provides us a dynamic template
 ```
