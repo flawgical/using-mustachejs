@@ -81,7 +81,7 @@ This method is essentially fetching the templates from external files and loads 
 </div>
 ```
 
-In order to ensure the compatibility with the jQuery, the <div> element is brought into action. Now, since we have different templates represented differently, we will have separate ids for each and now let’s put them into action by using them in a page:
+In order to ensure the compatibility with the jQuery, the "<div>" element is brought into action. Now, since we have different templates represented differently, we will have separate ids for each and now let’s put them into action by using them in a page:
 
 ```
 <!doctype html>
@@ -110,3 +110,16 @@ $(document).ready(function(){
 </body>
 </html>
 ```
+
+
+## More Methods
+
+##### There are a number of other methods as well that can be used and must be known to you:
+
+ich.addTemplate(name, mustacheTemplateString): This method is used to add a new template. While there are other methods for the same job, you can use it as an alternative to the <script type=”text/html”> way of execution. You also have the provision to lazy load.
+
+ich.clearAll(): As the name suggests, it frees some memory by clearing the templates and also reduces the cache to a fairly large extent.
+
+ich.grabTemplates(): This method proves to be resourceful while finding the <script type=”text/html”> tags from which it creates the templates. It then goes on to removing those elements from the dom.
+
+ich.refresh(): This one performs a total refresh, in the sense that it clears everything before fetching new templates. And this method proves to be handy when you have AJAX enabled pages containing more templates. This example only fetches the theme1 and loads it. Our jQuery basically does the job of inserting the returning document into the HTML element. This is basically how you can make the external method go about its job.
